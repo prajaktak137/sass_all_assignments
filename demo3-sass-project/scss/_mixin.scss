@@ -1,0 +1,15 @@
+// mixin
+@mixin dflex($flexdirection) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: $flexdirection;
+}
+
+// primary button
+@mixin primary-btn($bg-color) {
+    border: 1px solid #9D1D27;
+    padding: 0.5rem 2rem;
+    background-color: $bg-color;
+    cursor: pointer;
+}
