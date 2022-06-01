@@ -1,0 +1,28 @@
+// container width
+$breakpoints:("xs": 0,
+    "sm": 540px,
+    "md": 720px,
+    "lg": 960px,
+    "xl": 1140px);
+
+@mixin sm {
+    @media (max-width: map-get($breakpoints, "sm")) {
+        @content;
+    }
+}
+@mixin md{
+    @media (max-width: map-get($breakpoints, "md")) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (max-width: map-get($breakpoints, "lg")) {
+        @content;
+    }
+}
+
+@mixin for-tablet-landscape {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}

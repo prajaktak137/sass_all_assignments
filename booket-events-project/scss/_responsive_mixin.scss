@@ -1,0 +1,22 @@
+// Responsiveness start
+
+//mobile
+// @mixin responsive_mobile() {
+//     @media only screen and (max-width: 767px){
+//           @content;
+//     }
+//  }
+ 
+ // Tablet 
+//  @mixin responsive_tab() {
+//      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+//           @content;
+//      }
+//  }
+ 
+ // variable 
+ @mixin responsive($minWidth, $maxwidth) { 
+     @media only screen and (min-width: $minWidth) and (max-width: $maxwidth) {
+            @content;
+   }
+ }

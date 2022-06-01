@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css'>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Event Project</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header-nav">
+                <div class="logo-container">
+                    <img src="images/logo.png" alt="brand-logo" class="logo">
+                </div>
+
+                <ul class="nav header__list d-flex">
+                    <li class="nav-item">
+                       <input type="text" class="header__input" onfocus="(this.type = 'date')" placeholder="date">
+                       <label class="header__text d-block">I Want to go out</label>
+                    </li>
+                    <li class="nav-item">
+                       <input type="text" class="header__input" onclick="getlocation();" value="Location" placeholder="#"
+                          readonly />
+                       <label id= "demo1" class="header__text d-block">My current Location</label>
+                    </li>
+                    <li class="nav-item">
+                       <input type="text" class="header__input" value="Looking for" placeholder="#" />
+                       <label class="header__text d-block">What are u in the mood for?</label>
+                    </li>
+                    <li class="search__icon">
+                       <button title="search anything" type="button" class="triger_search">
+                        <img src="./images/Search.png"  class="search__icon_img" alt="search image"></button>
+                    </li>
+                 </ul>
+                
+                <div class="nav-links">
+                    <ul class="navbar">
+                        <li class="navbar__item">
+                            <a href="">
+                                <img src="images/host.png" alt=""></span>
+                                <span class="d-block">Host Event</span>
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="">
+                                <img src="images/wishlist.png" alt=""></span>
+                                <span class="d-block">Wishlist</span>
+                            </a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="">
+                                <img src="images/notification.png" alt=""></span>
+                                <span class="d-block">Notification</span>
+                            </a>
+                        </li>
+                        <li class="navbar__item dropdown">
+                            <a href="">
+                                <img src="images/profile.png" alt=""></span>
+                                <span class="d-block">Profile</span>
+                            </a>
+                            <ul class="dropdown__content">
+                                <li>
+                                    <a href="" class="mb-1">Account</a>
+                                    <a href="" class="mb-1">Upgrade</a>
+                                    <a href="" class="mb-1">Help</a>
+                                    <a href="" class="mb-1">Settings</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- section 1 start  -->
+        <section class="container">
+                <div class="slider custom-slider">
+                <div><img src="images/manoj-bajpayee1.png" alt="Manoj Bajpayee"/></div>
+                <div><img src="images/Manoj-Bajpayee2.jpg" alt="Manoj Bajpayee"/></div>
+                <div><img src="images/manoj-bajpayee3.png" alt="Manoj Bajpayee"/></div>
+                <div><img src="images/Manoj-Bajpayee4.jpg" alt="Manoj Bajpayee"/></div>
+                <div><img src="images/Manoj-Bajpayee5.jpg" alt="Manoj Bajpayee"/></div>
+              </div>
+        </section>
+        <!-- section 2 start  -->
+        <section class="container">
+            <div class="events">
+                <div class="events_header mb-1">
+                    <h3>Event Category<span class="lines">
+                            <img src="images/line1.png" alt="Lines">
+                            <img src="images/line2.png" alt="Lines">
+                        </span></h3>
+                    <button type="button" class="view_btn">VIEW ALL</button>
+                </div>
+                <div class="events_row">
+                    <div class="event_col_2 ">
+                        <div class="card card-bg card-1">
+                            <div class="card__body">
+                                <h5 class="card__body__title">Music</h5>
+                                <p class="card__body__content">24 Events Nearby</p>
+                            </div>
+                            <div class="card__image">
+                                <img src="images/arrow.png" class="card__image_arrow" alt="Swipe_Arrow">
+                                <img src="images/event1.png" alt="Event Images">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_col_2 ">
+                        <div class="card card-bg card-1">
+                            <div class="card__body">
+                                <h5 class="card__body__title">Business & Startups</h5>
+                                <p class="card__body__content">24 Events Nearby</p>
+                            </div>
+                            <div class="card__image">
+                                <img src="images/arrow.png" class="card__image_arrow" alt="Swipe_Arrow">
+                                <img src="images/event2.png" alt="Event Images">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_col_2 ">
+                        <div class="card card-bg card-1">
+                            <div class="card__body">
+                                <h5 class="card__body__title">Arts & Culture</h5>
+                                <p class="card__body__content">24 Events Nearby</p>
+                            </div>
+                            <div class="card__image">
+                                <img src="images/arrow.png" class="card__image_arrow" alt="Swipe_Arrow">
+                                <img src="images/event3.png" alt="Event Images">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_col_2 ">
+                        <div class="card card-bg card-1">
+                            <div class="card__body">
+                                <h5 class="card__body__title">Film & Media</h5>
+                                <p class="card__body__content">24 Events Nearby</p>
+                            </div>
+                            <div class="card__image">
+                                <img src="images/arrow.png" class="card__image_arrow" alt="Swipe_Arrow">
+                                <img src="images/event4.png" alt="Event Images">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_col_2 ">
+                        <div class="card card-bg card-1">
+                            <div class="card__body">
+                                <h5 class="card__body__title">Food & Drink</h5>
+                                <p class="card__body__content">24 Events Nearby</p>
+                            </div>
+                            <div class="card__image">
+                                <img src="images/arrow.png" class="card__image_arrow" alt="Swipe_Arrow">
+                                <img src="images/event5.png" alt="Event Images">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3 start  -->
+        <section class="container">
+            <div class="events">
+                <div class="events_header  mb-1">
+                    <h3>Popular Event<span class="lines">
+                            <img src="images/line1.png" alt="Lines">
+                            <img src="images/line2.png" alt="Lines">
+                        </span></h3>
+                    <button type="button" class="view_btn">VIEW ALL</button>
+                </div>
+                <div class="events_row">
+                    <div class="event_col_3">
+                        <div class="card">
+                            <div class="card__image card--img">
+                                <img src="images/popular1.png" alt="Event Images">
+                                <span class="like"><img src="images/like-event.png" alt="like-event"></span>
+                            </div>
+                            <div class="card_body">
+                                <span class="card_body__date">Sun, Nov 15, 11:00 AM</span>
+                                <div class="card-share">
+                                    <h4 class="card_body__title">Great Qatar Food Festival</h4>
+                                    <img src="images/share-event.png" alt="Event Images">
+                                </div>
+                                <p class="card_body__content">Mosman Park, Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_col_3">
+                        <div class="card">
+                            <div class="card__image card--img">
+                                <img src="images/popular2.png" alt="Event Images">
+                                <span class="like"><img src="images/like-event.png" alt="like-event"></span>
+                            </div>
+                            <div class="card_body">
+                                <span class="card_body__date">Sun, Nov 15, 11:00 AM</span>
+                                <div class="card-share">
+                                    <h4 class="card_body__title">Great Qatar Food Festival</h4>
+                                    <img src="images/share-event.png" alt="Event Images">
+                                </div>
+                                <p class="card_body__content">Mosman Park, Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_col_3">
+                        <div class="card">
+                            <div class="card__image card--img">
+                                <img src="images/popular3.png" alt="Event Images">
+                                <span class="like"><img src="images/like-event.png" alt="like-event"></span>
+                            </div>
+                            <div class="card_body">
+                                <span class="card_body__date">Sun, Nov 15, 11:00 AM</span>
+                                <div class="card-share">
+                                    <h4 class="card_body__title">Great Qatar Food Festival</h4>
+                                    <img src="images/share-event.png" alt="Event Images">
+                                </div>
+                                <p class="card_body__content">Mosman Park, Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_col_3">
+                        <div class="card">
+                            <div class="card__image card--img">
+                                <img src="images/popular4.png" alt="Event Images">
+                                <span class="like"><img src="images/like-event.png" alt="like-event"></span>
+                            </div>
+                            <div class="card_body">
+                                <span class="card_body__date">Sun, Nov 15, 11:00 AM</span>
+                                <div class="card-share">
+                                    <h4 class="card_body__title">Great Qatar Food Festival</h4>
+                                    <img src="images/share-event.png" alt="Event Images">
+                                </div>
+                                <p class="card_body__content">Mosman Park, Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="events">
+             <div class="events_header  mb-1">
+                    <h3>Recommended Events<span class="lines">
+                            <img src="images/line1.png" alt="Lines">
+                            <img src="images/line2.png" alt="Lines">
+                        </span></h3>
+                    <button type="button" class="view_btn">VIEW ALL</button>
+                </div>
+                <div class="events_row">
+                    <div class="event_col_3">
+                        <div class="card">
+                            <div class="card__image card--img">
+                                <img src="images/recom1.png" alt="Event Images">
+                                <span class="like"><img src="images/like-event.png" alt="like-event"></span>
+                            </div>
+                            <div class="card_body">
+                                <span class="card_body__date">Sun, Nov 15, 11:00 AM</span>
+                                <div class="card-share">
+                                    <h4 class="card_body__title">Great Qatar Food Festival</h4>
+                                    <img src="images/share-event.png" alt="Event Images">
+                                </div>
+                                <p class="card_body__content">Mosman Park, Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_col_3">
+                        <div class="card">
+                            <div class="card__image card--img">
+                                <img src="images/recom2.png" alt="Event Images">
+                                <span class="like"><img src="images/like-event.png" alt="like-event"></span>
+                            </div>
+                            <div class="card_body">
+                                <span class="card_body__date">Sun, Nov 15, 11:00 AM</span>
+                                <div class="card-share">
+                                    <h4 class="card_body__title">Great Qatar Food Festival</h4>
+                                    <img src="images/share-event.png" alt="Event Images">
+                                </div>
+                                <p class="card_body__content">Mosman Park, Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_col_3">
+                        <div class="card">
+                            <div class="card__image card--img">
+                                <img src="images/recom3.png" alt="Event Images">
+                                <span class="like"><img src="images/like-event.png" alt="like-event"></span>
+                            </div>
+                            <div class="card_body">
+                                <span class="card_body__date">Sun, Nov 15, 11:00 AM</span>
+                                <div class="card-share">
+                                    <h4 class="card_body__title">Great Qatar Food Festival</h4>
+                                    <img src="images/share-event.png" alt="Event Images">
+                                </div>
+                                <p class="card_body__content">Mosman Park, Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_col_3">
+                        <div class="card">
+                            <div class="card__image card--img">
+                                <img src="images/recom4.png" alt="Event Images">
+                                <span class="like"><img src="images/like-event.png" alt="like-event"></span>
+                            </div>
+                            <div class="card_body">
+                                <span class="card_body__date">Sun, Nov 15, 11:00 AM</span>
+                                <div class="card-share">
+                                    <h4 class="card_body__title">Great Qatar Food Festival</h4>
+                                    <img src="images/share-event.png" alt="Event Images">
+                                </div>
+                                <p class="card_body__content">Mosman Park, Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="events">
+                <div class="events_header  mb-1">
+                    <h3>Nearby Events<span class="lines">
+                            <img src="images/line1.png" alt="Lines">
+                            <img src="images/line2.png" alt="Lines">
+                        </span></h3>
+                    <button type="button" class="view_btn">VIEW ALL</button>
+                </div>
+                <div class="events_row">
+                    <div class="event_col_3">
+                        <div class="card">
+                            <div class="card__image card--img">
+                                <img src="images/nearby1.png" alt="Event Images">
+                                <span class="like"><img src="images/like-event.png" alt="like-event"></span>
+                            </div>
+                            <div class="card_body">
+                                <span class="card_body__date">Sun, Nov 15, 11:00 AM</span>
+                                <div class="card-share">
+                                    <h4 class="card_body__title">Great Qatar Food Festival</h4>
+                                    <img src="images/share-event.png" alt="Event Images">
+                                </div>
+                                <p class="card_body__content">Mosman Park, Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_col_3">
+                        <div class="card">
+                            <div class="card__image card--img">
+                                <img src="images/nearby2.png" alt="Event Images">
+                                <span class="like"><img src="images/like-event.png" alt="like-event"></span>
+                            </div>
+                            <div class="card_body">
+                                <span class="card_body__date">Sun, Nov 15, 11:00 AM</span>
+                                <div class="card-share">
+                                    <h4 class="card_body__title">Great Qatar Food Festival</h4>
+                                    <img src="images/share-event.png" alt="Event Images">
+                                </div>
+                                <p class="card_body__content">Mosman Park, Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_col_3">
+                        <div class="card">
+                            <div class="card__image card--img">
+                                <img src="images/nearby3.png" alt="Event Images">
+                                <span class="like"><img src="images/like-event.png" alt="like-event"></span>
+                            </div>
+                            <div class="card_body">
+                                <span class="card_body__date">Sun, Nov 15, 11:00 AM</span>
+                                <div class="card-share">
+                                    <h4 class="card_body__title">Great Qatar Food Festival</h4>
+                                    <img src="images/share-event.png" alt="Event Images">
+                                </div>
+                                <p class="card_body__content">Mosman Park, Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_col_3">
+                        <div class="card">
+                            <div class="card__image card--img">
+                                <img src="images/nearby4.png" alt="Event Images">
+                                <span class="like"><img src="images/like-event.png" alt="like-event"></span>
+                            </div>
+                            <div class="card_body">
+                                <span class="card_body__date">Sun, Nov 15, 11:00 AM</span>
+                                <div class="card-share">
+                                    <h4 class="card_body__title">Great Qatar Food Festival</h4>
+                                    <img src="images/share-event.png" alt="Event Images">
+                                </div>
+                                <p class="card_body__content">Mosman Park, Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="events">
+                <div class="events_header mb-1">
+                    <h3>Featured Events<span class="lines">
+                            <img src="images/line1.png" alt="Lines">
+                            <img src="images/line2.png" alt="Lines">
+                        </span></h3>
+                    <button type="button" class="view_btn">VIEW ALL</button>
+                </div>
+                <div class="events_row">
+                    <div class="event_col_3">
+                        <div class="card">
+                            <div class="card__image card--img">
+                                <img src="images/feature1.png" alt="Event Images">
+                                <span class="like"><img src="images/like-event.png" alt="like-event"></span>
+                            </div>
+                            <div class="card_body">
+                                <span class="card_body__date">Sun, Nov 15, 11:00 AM</span>
+                                <div class="card-share">
+                                    <h4 class="card_body__title">Great Qatar Food Festival</h4>
+                                    <img src="images/share-event.png" alt="Event Images">
+                                </div>
+                                <p class="card_body__content">Mosman Park, Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_col_3">
+                        <div class="card">
+                            <div class="card__image card--img">
+                                <img src="images/feature2.png" alt="Event Images">
+                                <span class="like"><img src="images/like-event.png" alt="like-event"></span>
+                            </div>
+                            <div class="card_body">
+                                <span class="card_body__date">Sun, Nov 15, 11:00 AM</span>
+                                <div class="card-share">
+                                    <h4 class="card_body__title">Great Qatar Food Festival</h4>
+                                    <img src="images/share-event.png" alt="Event Images">
+                                </div>
+                                <p class="card_body__content">Mosman Park, Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_col_3">
+                        <div class="card">
+                            <div class="card__image card--img">
+                                <img src="images/feature3.png" alt="Event Images">
+                                <span class="like"><img src="images/like-event.png" alt="like-event"></span>
+                            </div>
+                            <div class="card_body">
+                                <span class="card_body__date">Sun, Nov 15, 11:00 AM</span>
+                                <div class="card-share">
+                                    <h4 class="card_body__title">Great Qatar Food Festival</h4>
+                                    <img src="images/share-event.png" alt="Event Images">
+                                </div>
+                                <p class="card_body__content">Mosman Park, Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event_col_3">
+                        <div class="card">
+                            <div class="card__image card--img">
+                                <img src="images/feature4.png" alt="Event Images">
+                                <span class="like"><img src="images/like-event.png" alt="like-event"></span>
+                            </div>
+                            <div class="card_body">
+                                <span class="card_body__date">Sun, Nov 15, 11:00 AM</span>
+                                <div class="card-share">
+                                    <h4 class="card_body__title">Great Qatar Food Festival</h4>
+                                    <img src="images/share-event.png" alt="Event Images">
+                                </div>
+                                <p class="card_body__content">Mosman Park, Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <!-- Section 4 start  -->
+    <section class="container">
+    <div class="events">
+        <div class="events_header mb-1">
+            <h3>Featured Organizers<span class="lines">
+                    <img src="images/line1.png" alt="Lines">
+                    <img src="images/line2.png" alt="Lines">
+                </span></h3>
+            <button type="button" class="view_btn">VIEW ALL</button>
+        </div>
+        <div class="events_row">
+            <div class="event_col_2 ">
+                <div class="card text-center">
+                    <div class="card__image">
+                        <img src="images/organizer1.png" alt="Event Images">
+                    </div>
+                    <div class="card_body">
+                         <h4 class="card_body__title">Qatar Green Leaders</h4>  
+                         <p class="card_body__content card--content">273 Followers</p>
+                    </div>
+                    <div class="card_btn">
+                        <button type="button" class="follow_btn">Follow</button>
+                    </div>
+                </div>
+            </div>
+            <div class="event_col_2 ">
+                <div class="card text-center">
+                    <div class="card__image">
+                        <img src="images/organizer2.png" alt="Event Images">
+                    </div>
+                    <div class="card_body">
+                         <h4 class="card_body__title">MOC Doha 2021 Managing...</h4>  
+                         <p class="card_body__content">273 Followers</p>
+                    </div>
+                    <div class="card_btn">
+                        <button type="button" class="follow_btn">Follow</button>
+                    </div>
+                </div>
+            </div>
+            <div class="event_col_2 ">
+                <div class="card text-center">
+                    <div class="card__image">
+                        <img src="images/organizer345.png" class="org-345" alt="Event Images">
+                    </div>
+                    <div class="card_body">
+                         <h4 class="card_body__title">Waxdale Certified Program</h4>  
+                         <p class="card_body__content">273 Followers</p>
+                    </div>
+                    <div class="card_btn">
+                        <button type="button" class="follow_btn">Follow</button>
+                    </div>
+                </div>
+            </div>
+            <div class="event_col_2">
+                <div class="card text-center">
+                    <div class="card__image">
+                        <img src="images/organizer345.png" class="org-345" alt="Event Images">
+                    </div>
+                    <div class="card_body">
+                         <h4 class="card_body__title">CH2 Agency Bangalore</h4>  
+                         <p class="card_body__content">273 Followers</p>
+                    </div>
+                    <div class="card_btn">
+                        <button type="button" class="follow_btn">Follow</button>
+                    </div>
+                </div>
+            </div>
+            <div class=" event_col_2 ">
+                <div class="card text-center">
+                    <div class="card__image">
+                        <img src="images/organizer345.png" class="org-345" alt="Event Images">
+                    </div>
+                    <div class="card_body">
+                         <h4 class="card_body__title">CH2 Agency Bangalore</h4>  
+                         <p class="card_body__content">273 Followers</p>
+                    </div>
+                    <div class="card_btn">
+                    <button type="button" class="follow_btn">Follow</button>
+                   </div>
+                </div>
+            </div>
+       </div>
+     </div>
+</section>
+</main>
+
+<!-- Footer section start  -->
+    <footer class="footer_section">
+        <div class="container">
+            <div class="f-content">
+
+                <div class="brand ">
+                    <div class="brand__logo">
+                    <img src="images/BookET_Logo.png" alt="Brand logo">
+                    </div>
+                    <h4 class="brand__heading">Are you an event company? </h4>
+                    <div class="brand__btn">
+                        <button type="button" class="brand__btn_download">Join us</button>
+                    </div>
+                </div>
+
+                <div class="quick_links">
+                    <h4 class="f-data">Quick Link</h4>
+                        <ul>
+                            <li><a href="javascript:void(0)">About us</a></li>
+                            <li><a href="javascript:void(0)">Partners</a></li>
+                            <li><a href="javascript:void(0)">Contact us</a></li>
+                            <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                            <li><a href="javascript:void(0)">Terms of service</a></li>
+                            <li><a href="javascript:void(0)">Warranty policy</a></li>
+                        </ul>
+                </div>
+
+                <div class="f-address">
+                    <h4 class="f-data">Get in Touch</h4>
+                    <div class="f-address__info">
+                        <div>
+                            <a href="#"><img src="./images/location.png" alt=""></a>
+                           </div>
+                            <div class="contact-us">
+                            <p><a href="#">Sherin Tower 857, Sydney </a></p>
+                           </div>
+                    </div>
+                    <div class="f-address__info">
+                        <div>
+                        <a href="mailto:info@booket.com"><img src="./images/mail.png" alt=""></a>
+                        </div>
+                        <div class="contact-us">
+                            <p><a href="mailto:info@booket.com">info@booket.com</a></p>
+                        </div>
+                    </div>
+                    <div class="f-address__info">
+                        <div>
+                            <a href="tel:+91-9876543210"><img src="./images/phone.png" alt=""></a>
+                        </div>
+                        <div class="contact-us">
+                            <p><a href="tel:+91-9876543210">+91-9876543210</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="follow_us f-data">
+                    <h4 class="f-data">Follow us</h4>
+                    <div class="follow_us__img">
+                        <img src="./images/Icon-Social-Instagram.png" alt="">
+                        <img src="./images/Icon-Social-Instagram Copy.png" alt="">
+                        <img src="./images/Icon-Social-Instagram Copy 2.png" alt="">
+                    </div>
+                    <div class="follow_us__download">
+                   <h4 class="mb-1 ">Download App</h4>
+                     <button type="button" class="dwn"><a href="https://www.apple.com/" target="_blank"><img src="./images/App_Store.png" alt="App Store"></a></button>
+                     <button type="button" class="dwn"><a href="https://play.google.com/store" target="_blank"><img src="./images/Play_store.png" alt="Play Store"></a></button>
+                 </div>
+            </div>
+        </div>
+</footer>
+    
+    
+      <!-- partial -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js'>
+      </script>
+      <script>
+        $('.slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            arrows: true,
+            infinite: true,
+            cssEase: 'linear'
+        });
+        </script>
+
+        <script>
+            $(function () {
+	              $('#datetimepicker5').datetimepicker({
+		              defaultDate: "11/1/2013",
+		              disabledDates: [
+			          moment("12/25/2013"),
+			          new Date(2013, 11 - 1, 21),
+			          "11/22/2013 00:53"
+		]
+	});
+});
+        </script>
+         <script>
+            var variable1 = document.getElementById("demo1");
+            function getlocation() {
+              navigator.geolocation.getCurrentPosition(showLoc);
+            }
+            function showLoc(pos) {
+              variable1.innerHTML =
+                "Latitude: " +
+                pos.coords.latitude +
+                "<br>Longitude: " +
+                pos.coords.longitude;
+            }
+          </script>
+      
+
+</body>
+</html>
